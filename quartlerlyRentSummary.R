@@ -111,5 +111,6 @@ writeOGR(tRent, 'TriangleRentSummary_q3_2017.geojson','tRent', driver='GeoJSON')
 
 ##STUDIOS? NOT EXACTLY - INCLUDES HOMES, ROOMS, 1BR, 2BR, OTHER AS WELL... 
 studio <- filter(listings, bedrooms==0)
-  
+ 
+##CHECK ON WHATS CALLED 'FREE RENT' 
 FREE <- subset(rents,grepl("FREE RENT",title))
